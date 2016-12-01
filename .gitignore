@@ -49,4 +49,8 @@ src/ndnSIM
 configure
 toggle
 .ns3rc
+.cproject
+.project
+.settings/
+
 

@@ -6,7 +6,7 @@ all:
 # free free to change this part to suit your requirements
 configure:
 	#./waf configure --enable-examples --enable-tests
-	./waf configure -d optimized --disable-examples --disable-python --disable-tests
+	./waf configure -d optimized --enable-examples --disable-python --disable-tests
 
 build:
 	./waf build

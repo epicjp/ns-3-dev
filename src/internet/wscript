@@ -190,6 +190,7 @@ def build(bld):
         'model/global-route-manager-impl.cc',
         'model/candidate-queue.cc',
         'model/codel-queue.cc',
+        'model/codel-queue2.cc',
         'model/ipv4-global-routing.cc',
         'helper/ipv4-global-routing-helper.cc',
         'helper/internet-stack-helper.cc',

@@ -27,6 +27,7 @@
 #include <vector>
 #include <sstream>
 #include <iomanip>
+#include <assert.h>
 
 /**
  * \file
@@ -752,6 +753,10 @@ TypeId::LookupByName (std::string name)
 {
   NS_LOG_FUNCTION (name);
   uint16_t uid = IidManager::Get ()->GetUid (name);
+  if (uid == 0){
+    std::cout << "Name " << name << " not found!!\n";
+  }
+  assert(uid != 0);
   NS_ASSERT_MSG (uid != 0, "Assert in TypeId::LookupByName: " << name << " not found");
   return TypeId (uid);
 }
